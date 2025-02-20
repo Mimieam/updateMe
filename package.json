@@ -1,0 +1,33 @@
+{
+  "name": "update-me",
+  "version": "1.0.0",
+  "description": "update semantic version of a json file",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "updateMe": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "keywords": [
+    "version",
+    "json",
+    "update",
+    "npm"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimieam/update-me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mimieam/update-me/issues"
+  },
+  "homepage": "https://github.com/mimieam/update-me#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
