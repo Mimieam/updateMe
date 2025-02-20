@@ -58,7 +58,7 @@ Running the command:
 updateMe ./manifest.json --bump minor
 ```
 
-Will update the `version` to `1.3.0`.
+Will update the `version` to `1.3.3`.
 
 ## Error Handling
 
