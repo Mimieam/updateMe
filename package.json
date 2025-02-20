@@ -1,5 +1,5 @@
 {
-  "name": "updateme",
+  "name": "update-my-version",
   "version": "1.1.0",
   "description": "update semantic version of a json file",
   "main": "index.js",
