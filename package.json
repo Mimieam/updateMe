@@ -1,6 +1,6 @@
 {
-  "name": "update-me",
-  "version": "1.0.0",
+  "name": "updateme",
+  "version": "1.1.0",
   "description": "update semantic version of a json file",
   "main": "index.js",
   "type": "module",
