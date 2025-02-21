@@ -1,39 +1,39 @@
-# Update Me
+# VersionVibe
 
-`update-me` is a tiny npm package that allows you to update the version of any JSON file that contains a version property. It supports various methods for version incrementing, including masking and bumping.
+**VersionVibe** is a powerful npm package designed to manage semantic versioning of JSON files. It allows you to easily update the version property in any JSON file using various methods, including version masking and bumping.
 
 ## Installation
 
-To install the package globally, run:
+To install VersionVibe globally, run the following command:
 
 ```bash
-npm install -g update-me
+npm install -g version-vibe
 ```
 
 ## Usage
 
-You can use the `update-me` package directly from the command line. Here are the available commands:
+You can use the `version-vibe` package directly from the command line. Here are the available commands:
 
 ### Incrementing the Version
 
-1. **Using Masking**: You can increment the version arbitrarily using a mask.
+1. **Using Masking**: Increment the version using a specific mask.
 
    ```bash
-   updateMe ./path/to/your/manifest.json --x x.x.+3
+   versionVibe ./path/to/your/manifest.json --x x.x.+3
    ```
 
-2. **Bumping the Version**: You can increment the version by one for major, minor, or patch.
+2. **Bumping the Version**: Increment the version by one for major, minor, or patch.
 
    ```bash
-   updateMe ./path/to/your/manifest.json --bump major
-   updateMe ./path/to/your/manifest.json --bump minor
-   updateMe ./path/to/your/manifest.json --bump patch
+   versionVibe ./path/to/your/manifest.json --bump major
+   versionVibe ./path/to/your/manifest.json --bump minor
+   versionVibe ./path/to/your/manifest.json --bump patch
    ```
 
 3. **Lazy Increment**: This will increment the patch version by one with a rolling increment.
 
    ```bash
-   updateMe ./path/to/your/manifest.json
+   versionVibe ./path/to/your/manifest.json
    ```
 
 ## Command Options
@@ -42,7 +42,9 @@ You can use the `update-me` package directly from the command line. Here are the
   
 - `--bump <major|minor|patch>`: Specify which part of the version to increment. This will increment the specified part by one.
 
-## Example
+- `--help`: Display the help message with usage instructions.
+
+## Examples
 
 Given a `manifest.json` file with the following content:
 
@@ -55,19 +57,39 @@ Given a `manifest.json` file with the following content:
 Running the command:
 
 ```bash
-updateMe ./manifest.json --bump minor
+versionVibe ./manifest.json --bump minor
 ```
 
 Will update the `version` to `1.3.3`.
 
+### Additional Examples
+
+- Set the version explicitly:
+
+  ```bash
+  versionVibe ./manifest.json --x 2.3.4
+  ```
+
+- Bump the major version:
+
+  ```bash
+  versionVibe ./manifest.json --bump major
+  ```
+
+- Increment the patch version by 3:
+
+  ```bash
+  versionVibe ./manifest.json --x x.x.+3
+  ```
+
 ## Error Handling
 
-If you do not provide a filename or if the command options are invalid, the package will throw an error with a message indicating the issue.
+If you do not provide a filename or if the command options are invalid, VersionVibe will throw an error with a message indicating the issue.
 
-## TODO
+## Future Enhancements
 
 - Sync multiple files to the same version.
-- Implement additional features as needed.
+
 
 ## License
 

@@ -1,11 +1,11 @@
 {
-  "name": "update-my-version",
-  "version": "1.1.0",
-  "description": "update semantic version of a json file",
+  "name": "version-vibe",
+  "version": "0.0.1",
+  "description": "A tool to manage semantic versioning of JSON files",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "updateMe": "index.js"
+    "versionVibe": "index.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -17,17 +17,17 @@
     "update",
     "npm"
   ],
-  "author": "Your Name",
+  "author": "Miezan",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mimieam/update-me.git"
+    "url": "git+https://github.com/mimieam/versionVibe.git"
   },
   "bugs": {
-    "url": "https://github.com/mimieam/update-me/issues"
+    "url": "https://github.com/mimieam/versionVibe/issues"
   },
-  "homepage": "https://github.com/mimieam/update-me#readme",
+  "homepage": "https://github.com/mimieam/versionVibe#readme",
   "dependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.1"
   }
 }

@@ -12,20 +12,20 @@ const getPackageJson = () => {
 
 const showUsage = () => {
     console.log(`
-Usage: updateMe [filename] [options]
+Usage: versionVibe [filename] [options]
 
 Options:
   --x [versionMask]   Set the version using a mask (e.g., x.x.+3).
   --bump [type]       Bump the version (type can be major, minor, or patch).
   --help              Display this help message.
-  --
+  --version           Display the version of the package.
 
 Examples:
-  updateMe ./manifest.json --x 2.3.4
-  updateMe ./manifestmv3.json --bump major
-  updateMe ./manifest.json --bump minor
-  updateMe ./manifest.json --bump patch
-  updateMe ./manifest.mv3.json --x x.x.+3
+  versionVibe ./manifest.json --x 2.3.4
+  versionVibe ./manifestmv3.json --bump major
+  versionVibe ./manifest.json --bump minor
+  versionVibe ./manifest.json --bump patch
+  versionVibe ./manifest.mv3.json --x x.x.+3
 
   See test/index.test.js for more examples
 `);
